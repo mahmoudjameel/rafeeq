@@ -1,0 +1,14 @@
+rules_version = '2';
+service cloud.firestore {
+  match /databases/{database}/documents {
+    // Allow read/write access to website content
+    match /websiteContent/{document} {
+      allow read, write: if true;
+    }
+    
+    // Allow access to all collections for now (development mode)
+    match /{document=**} {
+      allow read, write: if true;
+    }
+  }
+}
