@@ -193,13 +193,7 @@ const Footer: React.FC = () => {
         {/* Business Information Section */}
         <div className="footer-business-info">
           <div className="business-info-grid">
-            <div className="business-info-item">
-              <div className="business-info-icon">📋</div>
-              <div className="business-info-content">
-                <span className="business-info-label">الرقم الضريبي</span>
-                <span className="business-info-value">310215262600003</span>
-              </div>
-            </div>
+          
             
             <div className="business-info-item">
               <div className="business-info-icon">🏢</div>
@@ -213,7 +207,7 @@ const Footer: React.FC = () => {
               <div className="business-info-icon">📄</div>
               <div className="business-info-content">
                 <span className="business-info-label">السجل التجاري</span>
-                <span className="business-info-value">1010913105</span>
+                <span className="business-info-value">7042319298</span>
               </div>
             </div>
           </div>

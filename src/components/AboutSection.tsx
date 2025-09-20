@@ -10,7 +10,7 @@ const AboutSection: React.FC = () => {
         <div className="row justify-content-center">
           <div className="col-lg-10">
             <div className="text-center mb-5">
-              <h2 className="about-title">{websiteData.about?.title || 'عن rfeeq رفيق للتقسيط | راحتك أولوية'}</h2>
+              <h2 className="about-title">{websiteData.about?.title || 'عن رفيق رفيق للتقسيط | راحتك أولوية'}</h2>
               <p className="about-description">
                 {websiteData.about?.description || 'rfeeq رفيق للتقسيط هي شركة رائدة في مجال التقسيط المريح في المملكة العربية السعودية. نؤمن بأن الحياة يجب أن تكون مريحة وخالية من الضغوط المالية.'}
               </p>
@@ -47,8 +47,7 @@ const AboutSection: React.FC = () => {
                 <div className="col-lg-3 col-md-6 mb-3">
                   <div className="benefit-item">
                     <div className="benefit-icon">
-                      <i className="fas fa-shield-check"></i>
-                    </div>
+                    <i className="fas fa-shield-alt"></i>                    </div>
                     <div className="benefit-text">آمن وموثوق</div>
                   </div>
                 </div>

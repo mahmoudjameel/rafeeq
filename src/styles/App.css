@@ -4713,13 +4713,12 @@ body {
 
 /* Business Information Section */
 .footer-business-info {
-    background: rgba(0, 0, 0, 0.3);
+    background: rgba(0, 0, 0, 0.03);
     border-radius: 20px;
     padding: 2rem;
     margin: 2rem 0;
-    border: 2px solid rgba(255, 215, 0, 0.3);
-    backdrop-filter: blur(15px);
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+    border: 1px solid #e5e7eb;
+    backdrop-filter: blur(6px);
 }
 
 .business-info-grid {
@@ -4734,32 +4733,31 @@ body {
     align-items: center;
     gap: 1rem;
     padding: 1.5rem;
-    background: rgba(255, 255, 255, 0.15);
+    background: #fff;
     border-radius: 15px;
-    border: 1px solid rgba(255, 215, 0, 0.2);
+    border: 1px solid #e5e7eb;
     transition: all 0.3s ease;
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 2px 8px rgba(0,0,0,0.04);
 }
 
 .business-info-item:hover {
-    background: rgba(255, 255, 255, 0.25);
-    transform: translateY(-3px);
-    box-shadow: 0 12px 35px rgba(0, 0, 0, 0.2);
-    border-color: rgba(255, 215, 0, 0.4);
+    background: #f3f4f6;
+    transform: translateY(-2px);
+    box-shadow: 0 8px 25px rgba(0,0,0,0.08);
 }
 
 .business-info-icon {
-    width: 55px;
-    height: 55px;
-    background: linear-gradient(135deg, #FFD700, #FFA500);
+    width: 48px;
+    height: 48px;
+    background: #ede9fe; /* بنفسجي فاتح */
     border-radius: 50%;
     display: flex;
     align-items: center;
     justify-content: center;
-    font-size: 1.8rem;
+    font-size: 1.5rem;
     flex-shrink: 0;
-    box-shadow: 0 8px 20px rgba(255, 215, 0, 0.4);
-    border: 3px solid rgba(255, 255, 255, 0.2);
+    color: #7c3aed; /* بنفسجي رئيسي */
+    box-shadow: 0 2px 8px rgba(124, 58, 237, 0.08);
 }
 
 .business-info-content {
@@ -4769,87 +4767,65 @@ body {
 }
 
 .business-info-label {
-    font-size: 1rem;
-    color: white;
-    font-weight: 600;
-    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3);
+    font-size: 0.95rem;
+    color: #6b7280; /* رمادي غامق */
+    font-weight: 500;
 }
 
 .business-info-value {
-    font-size: 1.2rem;
-    color: #FFD700;
-    font-weight: 800;
+    font-size: 1.1rem;
+    color: #1e293b; /* رمادي داكن جداً */
+    font-weight: 700;
     font-family: 'Courier New', monospace;
     letter-spacing: 1px;
-    text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.4);
 }
 
-/* Responsive Design for Business Info */
 @media (max-width: 768px) {
     .footer-business-info {
         padding: 1.5rem;
         margin: 1.5rem 0;
-        border-width: 1px;
     }
-    
     .business-info-grid {
         grid-template-columns: 1fr;
-        gap: 1.5rem;
+        gap: 1rem;
     }
-    
     .business-info-item {
-        padding: 1.2rem;
+        padding: 1rem;
         flex-direction: column;
         text-align: center;
-        gap: 1rem;
-        background: rgba(255, 255, 255, 0.2);
+        gap: 0.8rem;
     }
-    
     .business-info-icon {
-        width: 50px;
-        height: 50px;
-        font-size: 1.6rem;
-        box-shadow: 0 6px 18px rgba(255, 215, 0, 0.5);
+        width: 42px;
+        height: 42px;
+        font-size: 1.2rem;
     }
-    
     .business-info-label {
-        font-size: 1rem;
-        font-weight: 700;
+        font-size: 0.9rem;
     }
-    
     .business-info-value {
-        font-size: 1.1rem;
-        font-weight: 900;
+        font-size: 1rem;
     }
 }
 
 @media (max-width: 576px) {
     .footer-business-info {
-        padding: 1.2rem;
-        margin: 1rem 0;
-        border-width: 1px;
-    }
-    
-    .business-info-item {
         padding: 1rem;
-        background: rgba(255, 255, 255, 0.25);
+        margin: 1rem 0;
     }
-    
+    .business-info-item {
+        padding: 0.8rem;
+    }
     .business-info-icon {
-        width: 45px;
-        height: 45px;
-        font-size: 1.4rem;
-        box-shadow: 0 5px 15px rgba(255, 215, 0, 0.6);
-    }
-    
-    .business-info-label {
-        font-size: 0.9rem;
-        font-weight: 700;
-    }
-    
-    .business-info-value {
+        width: 36px;
+        height: 36px;
         font-size: 1rem;
-        font-weight: 900;
+    }
+    .business-info-label {
+        font-size: 0.85rem;
+    }
+    .business-info-value {
+        font-size: 0.95rem;
     }
 }
 
@@ -4898,4 +4874,20 @@ body {
 .nav-brand img {
     max-height: 100%; /* Scale logo to fit */
     height: auto; /* Maintain aspect ratio */
+}
+
+.navbar-brand-text {
+  margin-right: 0.75rem;
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: #7c3aed;
+  letter-spacing: 0.5px;
+  display: inline-block;
+}
+
+@media (max-width: 768px) {
+  .navbar-brand-text {
+    font-size: 1rem;
+    margin-right: 0.5rem;
+  }
 }
