@@ -28,13 +28,10 @@ const Navigation: React.FC = () => {
         <div className="nav-brand">
           <a href="#home" className="brand-link" onClick={closeMobileMenu}>
             <div className="brand-logo">
-              <div className="logo-circle">
-                <img src="/Test.jpeg" alt="rfeeq رفيق - ليس فقط للتقسيط!" className="logo-img" />
-              </div>
-              <div className="brand-text">
-                <span className="brand-name">rfeeq</span>
-                <span className="brand-tagline">رفيق للتقسيط</span>
-              </div>
+              <img src="/Test.jpeg" alt="rfeeq رفيق - ليس فقط للتقسيط!" className="logo-img" />
+            </div>
+            <div className="brand-text mobile-brand-text">
+              <span className="brand-name">رفيق للتقسيط</span>
             </div>
           </a>
         </div>
