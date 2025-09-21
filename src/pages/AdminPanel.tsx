@@ -45,7 +45,7 @@ const AdminPanel: React.FC<AdminPanelProps> = () => {
   }, []);
 
   const handleLogin = (email: string, password: string) => {
-    if (email === 'admin@toq' && password === '123456') {
+    if (email === 'admin@admin' && password === '123456') {
       localStorage.setItem('adminLoggedIn', 'true');
       setIsLoggedIn(true);
       showStatus('تم تسجيل الدخول بنجاح!', 'success');
@@ -256,7 +256,7 @@ const LoginScreen: React.FC<LoginScreenProps> = ({ onLogin }) => {
                   className="form-input"
                   value={email}
                   onChange={(e) => setEmail(e.target.value)}
-                  placeholder="admin@toq"
+                  placeholder="example@example.com"
                   required
                 />
               </div>
@@ -270,7 +270,7 @@ const LoginScreen: React.FC<LoginScreenProps> = ({ onLogin }) => {
                     className="form-input"
                     value={password}
                     onChange={(e) => setPassword(e.target.value)}
-                    placeholder="123456"
+                    placeholder="********"
                     required
                   />
                   <button
