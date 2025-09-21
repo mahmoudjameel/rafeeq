@@ -12,7 +12,7 @@ const HeroEditor: React.FC<HeroEditorProps> = ({ showStatus }) => {
     title: 'rfeeq رفيق للتقسيط',
     subtitle: 'حلول ذكية لجميع مشاكل التقسيط',
     mainHeading: 'ما تحتاج تعيش حرب نفسية مع راتبك!',
-    whatsappNumber: '+972592799888'
+    whatsappNumber: '+966 57 375 5644'
   });
 
   const [isLoading, setIsLoading] = useState(false);
@@ -24,7 +24,7 @@ const HeroEditor: React.FC<HeroEditorProps> = ({ showStatus }) => {
         title: websiteData.hero.title || 'rfeeq رفيق للتقسيط',
         subtitle: websiteData.hero.subtitle || 'حلول ذكية لجميع مشاكل التقسيط',
         mainHeading: websiteData.hero.mainHeading || 'ما تحتاج تعيش حرب نفسية مع راتبك!',
-        whatsappNumber: websiteData.whatsappNumber || '+972592799888'
+        whatsappNumber: websiteData.whatsappNumber || '+966 57 375 5644'
       });
     }
   }, [websiteData]);

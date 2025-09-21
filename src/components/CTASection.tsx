@@ -40,7 +40,7 @@ const CTASection: React.FC = () => {
                 </a>
               </div>
               <div className="col-md-4 mb-3">
-                <a href={`tel:${websiteData.whatsappNumber || '+972592799888'}`} className="cta-button w-100 d-block">
+                <a href={`tel:${websiteData.whatsappNumber || '+966 57 375 5644'}`} className="cta-button w-100 d-block">
                   <i className="fas fa-phone ms-2"></i>
                   {websiteData.cta?.callText || 'اتصل بنا'}
                 </a>
