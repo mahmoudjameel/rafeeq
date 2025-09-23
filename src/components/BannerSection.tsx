@@ -96,34 +96,43 @@ const BannerSection: React.FC = () => {
             </div>
           </div>
 
-          {/* CTA Section */}
+          {/* CTA Section - Classic Design */}
           <div className="banner-cta">
-            <div className="cta-content">
-              <h3 className="cta-title" style={{ color: '#333', fontWeight: 'bold' }}>هل أنت مستعد؟</h3>
-              <p className="cta-description" style={{ color: '#555' }}>
-                انضم إلينا الآن واستمتع بجميع المزايا والعروض.
-              </p>
+            <div className="container">
+              <div className="row justify-content-center">
+                <div className="col-lg-8 col-md-10">
+                  <div className="cta-content text-center">
+                    <h3 className="cta-title">هل أنت مستعد؟</h3>
+                    <p className="cta-description">
+                      انضم إلينا الآن واستمتع بجميع المزايا والعروض المميزة
+                    </p>
 
-              <div className="cta-buttons">
-                <a
-                  href={`https://wa.me/${websiteData.whatsappNumber?.replace('+', '') || '966573755644'}?text=مرحباً، أريد معلومات عن خدمات rfeeq رفيق - ليس فقط للتقسيط!`}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="primary-cta-button"
-                  style={{ backgroundColor: '#8B0000', color: '#fff', padding: '10px 20px', borderRadius: '5px' }}
-                >
-                  <span className="button-icon">🚀</span>
-                  <span className="button-text">ابدأ الآن</span>
-                </a>
-
-                <a
-                  href="#about"
-                  className="secondary-cta-button"
-                  style={{ backgroundColor: '#f5f5f5', color: '#333', padding: '10px 20px', borderRadius: '5px', border: '1px solid #ddd' }}
-                >
-                  <span className="button-icon">📞</span>
-                  <span className="button-text">تواصل معنا</span>
-                </a>
+                    <div className="cta-buttons-wrapper">
+                      <div className="row justify-content-center g-3">
+                        <div className="col-sm-6 col-md-4">
+                          <a
+                            href={`https://wa.me/${websiteData.whatsappNumber?.replace('+', '') || '966573755644'}?text=مرحباً، أريد معلومات عن خدمات rfeeq رفيق - ليس فقط للتقسيط!`}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="banner-btn banner-btn-primary w-100"
+                          >
+                            <span className="btn-icon">🚀</span>
+                            <span className="btn-text">ابدأ الآن</span>
+                          </a>
+                        </div>
+                        <div className="col-sm-6 col-md-4">
+                          <a
+                            href="#about"
+                            className="banner-btn banner-btn-secondary w-100"
+                          >
+                            <span className="btn-icon">📞</span>
+                            <span className="btn-text">تواصل معنا</span>
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
               </div>
             </div>
           </div>

@@ -4951,3 +4951,322 @@ body {
         height: 200px;
     }
 }
+
+/* تصميم قسم CTA كلاسيكي ومتجاوب */
+.cta-section {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    padding: 80px 0;
+    color: white;
+}
+
+.cta-title {
+    font-size: 2.8rem;
+    font-weight: 800;
+    color: white;
+    margin-bottom: 30px;
+    text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.3);
+    line-height: 1.2;
+}
+
+.cta-description {
+    font-size: 1.25rem;
+    color: white;
+    opacity: 0.95;
+    margin-bottom: 0;
+    line-height: 1.6;
+    max-width: 600px;
+    margin: 0 auto 40px;
+}
+
+/* أزرار CTA */
+.cta-button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 18px 32px;
+    border-radius: 50px;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 1.1rem;
+    transition: all 0.3s ease;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2);
+    border: none;
+    min-height: 60px;
+}
+
+.whatsapp-btn {
+    background: #25d366;
+    color: white;
+}
+
+.whatsapp-btn:hover {
+    background: #22c55e;
+    transform: translateY(-3px);
+    box-shadow: 0 12px 35px rgba(37, 211, 102, 0.4);
+    color: white;
+}
+
+.phone-btn {
+    background: white;
+    color: #667eea;
+}
+
+.phone-btn:hover {
+    background: #f8fafc;
+    transform: translateY(-3px);
+    box-shadow: 0 12px 35px rgba(255, 255, 255, 0.3);
+    color: #667eea;
+}
+
+.cta-button i {
+    font-size: 1.3rem;
+    margin-left: 8px;
+}
+
+/* إحصائيات سريعة */
+.quick-stat {
+    text-align: center;
+    padding: 30px 20px;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 15px;
+    backdrop-filter: blur(10px);
+    transition: all 0.3s ease;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.quick-stat:hover {
+    transform: translateY(-5px);
+    background: rgba(255, 255, 255, 0.15);
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.2);
+}
+
+.stat-icon {
+    font-size: 2.5rem;
+    color: #ffd700;
+    margin-bottom: 15px;
+    display: block;
+}
+
+.quick-stat h4 {
+    font-size: 2.2rem;
+    font-weight: 800;
+    color: white;
+    margin: 10px 0 8px;
+    text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.3);
+}
+
+.quick-stat p {
+    font-size: 1rem;
+    color: white;
+    opacity: 0.9;
+    margin: 0;
+    font-weight: 500;
+}
+
+/* التجاوب للشاشات المختلفة */
+@media (max-width: 992px) {
+    .cta-title {
+        font-size: 2.4rem;
+    }
+    
+    .cta-description {
+        font-size: 1.15rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .cta-section {
+        padding: 60px 0;
+    }
+    
+    .cta-title {
+        font-size: 2rem;
+        margin-bottom: 25px;
+    }
+    
+    .cta-description {
+        font-size: 1.1rem;
+        margin-bottom: 35px;
+    }
+    
+    .cta-button {
+        padding: 16px 28px;
+        font-size: 1rem;
+        min-height: 55px;
+    }
+    
+    .quick-stat {
+        margin-bottom: 20px;
+        padding: 25px 15px;
+    }
+    
+    .stat-icon {
+        font-size: 2rem;
+    }
+    
+    .quick-stat h4 {
+        font-size: 1.8rem;
+    }
+}
+
+@media (max-width: 576px) {
+    .cta-title {
+        font-size: 1.8rem;
+    }
+    
+    .cta-description {
+        font-size: 1rem;
+        padding: 0 10px;
+    }
+    
+    .cta-button {
+        padding: 14px 24px;
+        font-size: 0.95rem;
+    }
+}
+
+/* تصميم Banner CTA كلاسيكي */
+.banner-cta {
+    background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+    padding: 60px 0;
+    margin-top: 50px;
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    position: relative;
+    overflow: hidden;
+}
+
+.banner-cta::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><defs><pattern id="grain" width="100" height="100" patternUnits="userSpaceOnUse"><circle cx="50" cy="50" r="1" fill="%23000000" opacity="0.02"/></pattern></defs><rect width="100" height="100" fill="url(%23grain)"/></svg>');
+    pointer-events: none;
+}
+
+.banner-cta .cta-content {
+    position: relative;
+    z-index: 2;
+}
+
+.banner-cta .cta-title {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: #2c3e50;
+    margin-bottom: 20px;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.banner-cta .cta-description {
+    font-size: 1.2rem;
+    color: #5a6c7d;
+    margin-bottom: 40px;
+    line-height: 1.6;
+    max-width: 500px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.cta-buttons-wrapper {
+    margin-top: 30px;
+}
+
+/* أزرار Banner */
+.banner-btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    padding: 16px 32px;
+    border-radius: 50px;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 1.1rem;
+    transition: all 0.3s ease;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    border: 2px solid transparent;
+    min-height: 60px;
+}
+
+.banner-btn-primary {
+    background: linear-gradient(45deg, #dc3545, #8B0000);
+    color: white;
+    border-color: #8B0000;
+}
+
+.banner-btn-primary:hover {
+    background: linear-gradient(45deg, #8B0000, #dc3545);
+    transform: translateY(-3px);
+    box-shadow: 0 8px 25px rgba(139, 0, 0, 0.3);
+    color: white;
+}
+
+.banner-btn-secondary {
+    background: white;
+    color: #2c3e50;
+    border-color: #e9ecef;
+}
+
+.banner-btn-secondary:hover {
+    background: #f8f9fa;
+    transform: translateY(-3px);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+    color: #2c3e50;
+    border-color: #dee2e6;
+}
+
+.btn-icon {
+    font-size: 1.2rem;
+}
+
+.btn-text {
+    font-weight: 600;
+}
+
+/* التجاوب للشاشات المختلفة */
+@media (max-width: 992px) {
+    .banner-cta .cta-title {
+        font-size: 2.2rem;
+    }
+    
+    .banner-cta .cta-description {
+        font-size: 1.1rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .banner-cta {
+        padding: 40px 0;
+        margin-top: 30px;
+    }
+    
+    .banner-cta .cta-title {
+        font-size: 2rem;
+    }
+    
+    .banner-cta .cta-description {
+        font-size: 1rem;
+        margin-bottom: 30px;
+    }
+    
+    .banner-btn {
+        padding: 14px 28px;
+        font-size: 1rem;
+        min-height: 55px;
+    }
+}
+
+@media (max-width: 576px) {
+    .banner-cta .cta-title {
+        font-size: 1.8rem;
+    }
+    
+    .banner-btn {
+        padding: 12px 24px;
+        font-size: 0.95rem;
+        min-height: 50px;
+    }
+}

@@ -57,7 +57,6 @@ const Footer: React.FC = () => {
             {/* Quick Links */}
             <div className="footer-links-section">
               <h4 className="footer-section-title">
-                <span className="section-icon">🔗</span>
                 روابط سريعة
               </h4>
               <ul className="footer-links-list">
@@ -72,7 +71,6 @@ const Footer: React.FC = () => {
             {/* Services */}
             <div className="footer-links-section">
               <h4 className="footer-section-title">
-                <span className="section-icon">🛍️</span>
                 خدماتنا
               </h4>
               <ul className="footer-links-list">
@@ -87,7 +85,6 @@ const Footer: React.FC = () => {
             {/* Support */}
             <div className="footer-links-section">
               <h4 className="footer-section-title">
-                <span className="section-icon">🆘</span>
                 الدعم والمساعدة
               </h4>
               <ul className="footer-links-list">

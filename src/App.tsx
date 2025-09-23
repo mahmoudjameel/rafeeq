@@ -13,7 +13,6 @@ import AboutSection from './components/AboutSection';
 import PrivacyPolicy from './components/PrivacyPolicy';
 import ReturnPolicy from './components/ReturnPolicy';
 import OrderForm from './components/OrderForm';
-import CTASection from './components/CTASection';
 import Footer from './components/Footer';
 import WhatsAppFloat from './components/WhatsAppFloat';
 import AdminPanel from './pages/AdminPanel';
@@ -28,13 +27,13 @@ function App() {
       <WebsiteProvider>
         <Router>
           <div className="App">
-                                    <GoogleAnalytics measurementId="G-L2NW4MN4ZW" />
-                        <SEOManager />
-                        <Navigation />
-                        
-                        <Routes>
-                          <Route path="/" element={
-                            <>
+            <GoogleAnalytics measurementId="G-L2NW4MN4ZW" />
+            <SEOManager />
+            <Navigation />
+
+            <Routes>
+              <Route path="/" element={
+                <>
                   <HeroSection />
                   <CustomerReviews />
                   <MovingText />
@@ -46,7 +45,6 @@ function App() {
                   <ReturnPolicy />
                   <OrderForm />
                   <FAQ />
-                  <CTASection />
                   <Footer />
                   <WhatsAppFloat />
                 </>
