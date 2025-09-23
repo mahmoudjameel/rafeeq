@@ -5,9 +5,9 @@ const WhatsAppFloat: React.FC = () => {
   const { websiteData } = useWebsite();
 
   return (
-    <a 
-      href={`https://wa.me/${websiteData.whatsappNumber?.replace('+', '') || '966533388675'}?text=مرحباً، أريد معلومات عن خدمات rfeeq رفيق - ليس فقط للتقسيط!`}
-      target="_blank" 
+    <a
+      href={`https://wa.me/${websiteData.whatsappNumber?.replace('+', '') || '966573755644'}?text=مرحباً، أريد معلومات عن خدمات rfeeq رفيق - ليس فقط للتقسيط!`}
+      target="_blank"
       rel="noopener noreferrer"
       className="whatsapp-float"
       aria-label="تواصل معنا على الواتساب"

@@ -4891,3 +4891,63 @@ body {
     margin-right: 0.5rem;
   }
 }
+
+/* كلاس خاص للنص الأبيض المميز */
+.title-highlight-white {
+    color: white;
+    font-weight: 900;
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.5);
+    position: relative;
+}
+
+/* إجبار لون أبيض للإحصائيات */
+.hero-stats .stat-number {
+    color: white !important;
+}
+
+.hero-stats .stat-label {
+    color: white !important;
+}
+
+/* تصميم اللوجو في قسم Hero */
+.hero-logo-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero-logo-wrapper {
+    position: relative;
+    animation: logo-float 3s ease-in-out infinite;
+}
+
+.hero-logo-img {
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    object-fit: cover;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
+    border: 5px solid rgba(255, 255, 255, 0.2);
+    transition: transform 0.3s ease;
+}
+
+.hero-logo-img:hover {
+    transform: scale(1.05);
+}
+
+@keyframes logo-float {
+    0%, 100% { 
+        transform: translateY(0px);
+    }
+    50% { 
+        transform: translateY(-10px);
+    }
+}
+
+/* تجاوب للشاشات الصغيرة */
+@media (max-width: 768px) {
+    .hero-logo-img {
+        width: 200px;
+        height: 200px;
+    }
+}

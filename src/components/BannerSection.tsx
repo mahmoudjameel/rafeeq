@@ -49,13 +49,13 @@ const BannerSection: React.FC = () => {
               <span className="badge-icon">🎯</span>
               <span className="badge-text">عروض حصرية</span>
             </div>
-            
+
             <h2 className="banner-title" style={{ color: '#333', fontWeight: 'bold' }}>
               لا تفوت الفرصة!
               <br />
               <span className="title-highlight" style={{ color: '#8B0000' }}>احصل على أفضل العروض الآن</span>
             </h2>
-            
+
             <p className="banner-description" style={{ color: '#555' }}>
               انضم إلى آلاف العملاء الراضين واستمتع بخدمات تقسيط مميزة
               مع عروض وهدايا حصرية.
@@ -65,8 +65,8 @@ const BannerSection: React.FC = () => {
           {/* Features Grid */}
           <div className="features-showcase">
             {offers.map((offer, index) => (
-              <div 
-                key={index} 
+              <div
+                key={index}
                 className={`feature-card ${index === currentOffer ? 'active' : ''}`}
                 style={{ '--offer-color': offer.color } as React.CSSProperties}
               >
@@ -103,11 +103,11 @@ const BannerSection: React.FC = () => {
               <p className="cta-description" style={{ color: '#555' }}>
                 انضم إلينا الآن واستمتع بجميع المزايا والعروض.
               </p>
-              
+
               <div className="cta-buttons">
-                <a 
-                  href={`https://wa.me/${websiteData.whatsappNumber?.replace('+', '') || '966533388675'}?text=مرحباً، أريد معلومات عن خدمات rfeeq رفيق - ليس فقط للتقسيط!`}
-                  target="_blank" 
+                <a
+                  href={`https://wa.me/${websiteData.whatsappNumber?.replace('+', '') || '966573755644'}?text=مرحباً، أريد معلومات عن خدمات rfeeq رفيق - ليس فقط للتقسيط!`}
+                  target="_blank"
                   rel="noopener noreferrer"
                   className="primary-cta-button"
                   style={{ backgroundColor: '#8B0000', color: '#fff', padding: '10px 20px', borderRadius: '5px' }}
@@ -115,9 +115,9 @@ const BannerSection: React.FC = () => {
                   <span className="button-icon">🚀</span>
                   <span className="button-text">ابدأ الآن</span>
                 </a>
-                
-                <a 
-                  href="#about" 
+
+                <a
+                  href="#about"
                   className="secondary-cta-button"
                   style={{ backgroundColor: '#f5f5f5', color: '#333', padding: '10px 20px', borderRadius: '5px', border: '1px solid #ddd' }}
                 >

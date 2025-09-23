@@ -59,11 +59,11 @@ const Navigation: React.FC = () => {
               <span className="nav-text">اتصل بنا</span>
             </a>
           </div>
-          
+
           <div className="nav-actions">
-            <a 
-              href="https://wa.me/966533388675?text=مرحباً، أريد معلومات عن تقسيط الأجهزة مع rfeeq رفيق للتقسيط" 
-              target="_blank" 
+            <a
+              href="https://wa.me/966573755644?text=مرحباً، أريد معلومات عن تقسيط الأجهزة مع rfeeq رفيق للتقسيط"
+              target="_blank"
               rel="noopener noreferrer"
               className="cta-button"
             >
@@ -74,7 +74,7 @@ const Navigation: React.FC = () => {
         </div>
 
         {/* Mobile Menu Button */}
-        <button 
+        <button
           className={`mobile-menu-toggle ${isMobileMenuOpen ? 'active' : ''}`}
           onClick={toggleMobileMenu}
           aria-label="Toggle menu"
@@ -103,10 +103,10 @@ const Navigation: React.FC = () => {
               <span className="mobile-nav-icon">📞</span>
               <span className="mobile-nav-text">اتصل بنا</span>
             </a>
-            
-            <a 
-              href="https://wa.me/966533388675?text=مرحباً، أريد معلومات عن تقسيط الأجهزة مع rfeeq رفيق للتقسيط" 
-              target="_blank" 
+
+            <a
+              href="https://wa.me/966573755644?text=مرحباً، أريد معلومات عن تقسيط الأجهزة مع rfeeq رفيق للتقسيط"
+              target="_blank"
               rel="noopener noreferrer"
               className="mobile-cta-button"
               onClick={closeMobileMenu}

@@ -6,7 +6,7 @@ const Footer: React.FC = () => {
 
   // Use data from context or fallback to defaults
   const socialMediaPlatforms = websiteData.socialMedia?.platforms?.filter(platform => platform.status === 'active') || [
-    { name: 'whatsapp', icon: 'fab fa-whatsapp', text: 'واتساب', link: 'https://wa.me/966533388675' },
+    { name: 'whatsapp', icon: 'fab fa-whatsapp', text: 'واتساب', link: 'https://wa.me/966573755644' },
     { name: 'twitter', icon: 'fab fa-twitter', text: 'تويتر', link: 'https://twitter.com/rfeeq_sa' },
     { name: 'instagram', icon: 'fab fa-instagram', text: 'انستغرام', link: 'https://instagram.com/rfeeq_sa' },
     { name: 'snapchat', icon: 'fab fa-snapchat', text: 'سناب شات', link: 'https://snapchat.com/add/rfeeq_sa' },
@@ -33,16 +33,16 @@ const Footer: React.FC = () => {
                 <p className="footer-brand-tagline">رفيق للتقسيط</p>
               </div>
             </div>
-            
+
             <p className="footer-description">
               {websiteData.footer?.description || 'منصة التقسيط الميسر للأجهزة الإلكترونية والمنزلية في المملكة العربية السعودية. نقدم أفضل الخدمات وأسهل طرق التقسيط لعملائنا الكرام.'}
             </p>
-            
+
             {/* Contact CTA */}
             <div className="footer-cta">
-              <a 
+              <a
                 href={`https://wa.me/${websiteData.whatsappNumber?.replace('+', '') || '966592799888'}?text=مرحباً، أريد معلومات عن تقسيط الأجهزة مع rfeeq رفيق للتقسيط`}
-                target="_blank" 
+                target="_blank"
                 rel="noopener noreferrer"
                 className="footer-whatsapp-button"
               >
@@ -106,7 +106,7 @@ const Footer: React.FC = () => {
               <span className="section-icon">📞</span>
               معلومات التواصل
             </h4>
-            
+
             <div className="contact-items">
               <div className="contact-item">
                 <div className="contact-icon">📍</div>
@@ -115,7 +115,7 @@ const Footer: React.FC = () => {
                   <span className="contact-value">الرياض, الياسمين 11332</span>
                 </div>
               </div>
-              
+
               <div className="contact-item">
                 <div className="contact-icon">📱</div>
                 <div className="contact-details">
@@ -123,7 +123,7 @@ const Footer: React.FC = () => {
                   <span className="contact-value">{websiteData.whatsappNumber || '+966 11 123 4567'}</span>
                 </div>
               </div>
-              
+
               <div className="contact-item">
                 <div className="contact-icon">✉️</div>
                 <div className="contact-details">
@@ -131,7 +131,7 @@ const Footer: React.FC = () => {
                   <span className="contact-value">{websiteData.settings?.email || 'info@rfeeq.sa'}</span>
                 </div>
               </div>
-              
+
               <div className="contact-item">
                 <div className="contact-icon">🕒</div>
                 <div className="contact-details">
@@ -149,15 +149,15 @@ const Footer: React.FC = () => {
             <span className="social-icon">🌟</span>
             تابعنا على وسائل التواصل الاجتماعي
           </h4>
-          
+
           <div className="social-platforms">
             {socialMediaPlatforms.slice(0, 6).map((platform) => (
-              <a 
-                key={platform.name} 
-                href={platform.link} 
-                className="social-platform-link" 
+              <a
+                key={platform.name}
+                href={platform.link}
+                className="social-platform-link"
                 title={platform.text}
-                target="_blank" 
+                target="_blank"
                 rel="noopener noreferrer"
                 data-platform={platform.name}
               >
@@ -177,13 +177,13 @@ const Footer: React.FC = () => {
             موقعنا على الخريطة
           </h4>
           <div className="map-container">
-            <iframe 
+            <iframe
               src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3624.7!2d46.6753!3d24.7136!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMjTCsDQyJzQ5LjAiTiA0NsKwNDAnMzEuMSJF!5e0!3m2!1sen!2ssa!4v1234567890"
-              width="100%" 
-              height="250" 
-              style={{ border: 0, borderRadius: '20px' }} 
-              allowFullScreen={true} 
-              loading="lazy" 
+              width="100%"
+              height="250"
+              style={{ border: 0, borderRadius: '20px' }}
+              allowFullScreen={true}
+              loading="lazy"
               referrerPolicy="no-referrer-when-downgrade"
               title="موقع rfeeq رفيق للتقسيط"
             />
@@ -193,8 +193,8 @@ const Footer: React.FC = () => {
         {/* Business Information Section */}
         <div className="footer-business-info">
           <div className="business-info-grid">
-          
-            
+
+
             <div className="business-info-item">
               <div className="business-info-icon">🏢</div>
               <div className="business-info-content">
@@ -202,7 +202,7 @@ const Footer: React.FC = () => {
                 <span className="business-info-value">0000189326</span>
               </div>
             </div>
-            
+
             <div className="business-info-item">
               <div className="business-info-icon">📄</div>
               <div className="business-info-content">
@@ -224,7 +224,7 @@ const Footer: React.FC = () => {
                 شريكك الموثوق في عالم التقسيط الذكي
               </p>
             </div>
-            
+
             <div className="footer-bottom-links">
               <a href="#terms" className="bottom-link">الشروط والأحكام</a>
               <a href="#privacy" className="bottom-link">سياسة الخصوصية</a>
