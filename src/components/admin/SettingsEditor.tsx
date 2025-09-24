@@ -14,7 +14,8 @@ const SettingsEditor: React.FC<SettingsEditorProps> = ({ db, showStatus }) => {
     email: 'info@touq.sa',
     copyright: '© 2025 rfeeq رفيق للتقسيط. جميع الحقوق محفوظة',
     tiktokPixelId: '',
-    snapchatPixelId: ''
+    snapchatPixelId: '',
+    gtmContainerId: ''
   });
 
   const [isLoading, setIsLoading] = useState(false);
@@ -37,7 +38,8 @@ const SettingsEditor: React.FC<SettingsEditorProps> = ({ db, showStatus }) => {
             email: data.settings.email || 'info@touq.sa',
             copyright: data.settings.copyright || '© 2025 rfeeq رفيق للتقسيط. جميع الحقوق محفوظة',
             tiktokPixelId: data.settings.tiktokPixelId || '',
-            snapchatPixelId: data.settings.snapchatPixelId || ''
+            snapchatPixelId: data.settings.snapchatPixelId || '',
+            gtmContainerId: data.settings.gtmContainerId || ''
           });
         }
       }
@@ -124,6 +126,20 @@ const SettingsEditor: React.FC<SettingsEditorProps> = ({ db, showStatus }) => {
               value={formData.snapchatPixelId}
               onChange={handleInputChange}
               placeholder="أدخل Snapchat Pixel ID"
+            />
+          </div>
+        </div>
+
+        <div className="row mt-3">
+          <div className="col-md-6">
+            <label className="form-label">Google Tag Manager Container ID</label>
+            <input
+              type="text"
+              className="form-control"
+              name="gtmContainerId"
+              value={formData.gtmContainerId}
+              onChange={handleInputChange}
+              placeholder="مثال: GTM-XXXXXXX"
             />
           </div>
         </div>

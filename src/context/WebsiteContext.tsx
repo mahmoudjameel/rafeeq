@@ -113,6 +113,7 @@ interface WebsiteData {
     copyright: string;
     tiktokPixelId?: string;
     snapchatPixelId?: string;
+    gtmContainerId?: string;
   };
   whatsappNumber?: string;
   lastUpdated?: Date;

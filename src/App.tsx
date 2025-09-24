@@ -19,6 +19,7 @@ import AdminPanel from './pages/AdminPanel';
 import SEOManager from './components/SEOManager';
 import FAQ from './components/FAQ';
 import GoogleAnalytics from './components/GoogleAnalytics';
+import TrackingBoot from './components/TrackingBoot';
 import './styles/App.css';
 
 function App() {
@@ -28,6 +29,7 @@ function App() {
         <Router>
           <div className="App">
             <GoogleAnalytics measurementId="G-L2NW4MN4ZW" />
+            <TrackingBoot />
             <SEOManager />
             <Navigation />
 
