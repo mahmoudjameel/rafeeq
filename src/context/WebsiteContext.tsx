@@ -111,6 +111,8 @@ interface WebsiteData {
     address: string;
     email: string;
     copyright: string;
+    tiktokPixelId?: string;
+    snapchatPixelId?: string;
   };
   whatsappNumber?: string;
   lastUpdated?: Date;

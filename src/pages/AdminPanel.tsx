@@ -239,7 +239,7 @@ const LoginScreen: React.FC<LoginScreenProps> = ({ onLogin }) => {
     <div className="admin-panel">
       <div className="admin-header">
         <h1 className="admin-title">تسجيل الدخول</h1>
-        <p className="admin-subtitle">لوحة تحكم رفيق رفيق للتقسيط</p>
+        <p className="admin-subtitle">لوحة تحكم rfeeq رفيق للتقسيط</p>
       </div>
 
       <div className="admin-container">
@@ -270,7 +270,7 @@ const LoginScreen: React.FC<LoginScreenProps> = ({ onLogin }) => {
                     className="form-input"
                     value={password}
                     onChange={(e) => setPassword(e.target.value)}
-                    placeholder="********"
+                    placeholder="123456"
                     required
                   />
                   <button

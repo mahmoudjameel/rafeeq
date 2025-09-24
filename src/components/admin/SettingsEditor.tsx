@@ -12,7 +12,9 @@ const SettingsEditor: React.FC<SettingsEditorProps> = ({ db, showStatus }) => {
     companyName: 'rfeeq رفيق للتقسيط',
     address: 'الرياض، المملكة العربية السعودية',
     email: 'info@touq.sa',
-    copyright: '© 2025 rfeeq رفيق للتقسيط. جميع الحقوق محفوظة'
+    copyright: '© 2025 rfeeq رفيق للتقسيط. جميع الحقوق محفوظة',
+    tiktokPixelId: '',
+    snapchatPixelId: ''
   });
 
   const [isLoading, setIsLoading] = useState(false);
@@ -29,7 +31,14 @@ const SettingsEditor: React.FC<SettingsEditorProps> = ({ db, showStatus }) => {
       if (docSnap.exists()) {
         const data = docSnap.data();
         if (data.settings) {
-          setFormData(data.settings);
+          setFormData({
+            companyName: data.settings.companyName || 'rfeeq رفيق للتقسيط',
+            address: data.settings.address || 'الرياض، المملكة العربية السعودية',
+            email: data.settings.email || 'info@touq.sa',
+            copyright: data.settings.copyright || '© 2025 rfeeq رفيق للتقسيط. جميع الحقوق محفوظة',
+            tiktokPixelId: data.settings.tiktokPixelId || '',
+            snapchatPixelId: data.settings.snapchatPixelId || ''
+          });
         }
       }
     } catch (error) {
@@ -94,6 +103,31 @@ const SettingsEditor: React.FC<SettingsEditorProps> = ({ db, showStatus }) => {
             />
           </div>
         </div>
+        <div className="row mt-3">
+          <div className="col-md-6">
+            <label className="form-label">TikTok Pixel ID</label>
+            <input
+              type="text"
+              className="form-control"
+              name="tiktokPixelId"
+              value={formData.tiktokPixelId}
+              onChange={handleInputChange}
+              placeholder="أدخل TikTok Pixel ID"
+            />
+          </div>
+          <div className="col-md-6">
+            <label className="form-label">Snapchat Pixel ID</label>
+            <input
+              type="text"
+              className="form-control"
+              name="snapchatPixelId"
+              value={formData.snapchatPixelId}
+              onChange={handleInputChange}
+              placeholder="أدخل Snapchat Pixel ID"
+            />
+          </div>
+        </div>
+        
         <div className="row mt-3">
           <div className="col-md-6">
             <label className="form-label">البريد الإلكتروني</label>
